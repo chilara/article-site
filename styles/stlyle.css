@@ -6,9 +6,8 @@
 }
 
 body{
-    background-color: #dbe3e5;
+    background-color: #f3f4ed;
 }
-
 
 .container{
 
@@ -16,16 +15,12 @@ body{
     font-family: "Rubik", sans-serif;
 }
 
-
 header{
     border-bottom: 3px solid #f0efef;
 }
 
-
-
-
 nav{
-    background-color: #000000;
+    background-color: #536162;
     height: 50px;
 }
 
@@ -36,10 +31,7 @@ header h1{
     margin: 50px auto;
 }
 
-
-
 .articleContainer{
-
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -49,26 +41,129 @@ header h1{
     margin-top: 5%;
     margin-left: 5%;
 
-
-
 }
 
 div{
-
     width: 20%;
+    background-color: #536162;
+    padding: 15px;
+    border-radius: 5px;
 }
-
 
 h4{
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 50%;
 }
-
 
 a{
     text-decoration: none;
+    padding: 7px;
+    background-color: #c06014;
+    color: black; 
+    border-radius: 5px;   
+}
+
+a:hover{
+    background-color: #f3f4ed;
+}
+
+form {
+    width: 40%;
+    padding: 1rem;
+    margin: auto;
+}
+form fieldset {
+    border: 1px solid #c1bfbf;
+    padding: .3rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+form fieldset input {
+    width: 98%;
+    border: 1px solid #c1bfbf;
     padding: 5px;
-    background-color: #f0efef;
-    color: grey;
+    border-radius: 3px;
+}
+form fieldset input:focus {
+    outline-color: #c1bfbf;
+}
+#createBtn {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c06014;
+    color: black;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    border-bottom: 1px solid;
+    margin-left: 3%;
+}
+#createBtn:hover {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #c1bfbf;
+    color: black;
+    border-color: black;
+    box-shadow: 3px 3px 10px #424642;
+}
+
+.fill{
+    margin-left: 3%;
+    font-size: larger;
+}
+
+.nav-btn{
+    margin-top: 1%;
+    margin-left: 5%;
+    background-color: #c06014;
+    border: none;
+}
+
+.jumbotron{
+    
+    margin-top: 15%;
+    margin-left: 35%;
+    width: 30%;
+    background-color: #536162;
+    padding: 10px;
+    border-radius: 5px;
     
 }
+
+
+
+
+#img{
+    width: 40%;
+
+}
+
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #c06014;
+    width: 50%;
+}
+
+#url{
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#author{
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#comments{
+    margin-left: 4%;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+

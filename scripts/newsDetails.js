@@ -8,9 +8,12 @@ const get_id = () => {
     return url.searchParams.get("id");
 
 }
+
+
 const getSingleNews = async (id) => {
     try{ response =await fetch(`${base_url}/news/${id}`);
     const newsData = await response.json();
+    await getComments(id)
     displayNewsDetails(newsData);
        }catch (error){
     console.log(error);
@@ -39,4 +42,28 @@ const displayNewsDetails = (data) => {
   };
 
 
+  // displaying commenting
+const displayComments = data => {
+  const ulTag = document.querySelector('#comments');
+  const comments =  data.map(item => (`<li>${item.comment}</li>`));
+  ulTag.innerHTML = comments;
+}
+
+
+// getting comments
+const getComments = async (id) =>{
+  const commentApi = `${base_url}/news/${id}/comments`;
+  try {
+    let response = await fetch(commentApi);
+    response = await response.json();
+    displayComments(response);
+  } catch (error) {
+    
+  }
+}
+
+
+
+
 window.onload = getSingleNews(get_id());
+
