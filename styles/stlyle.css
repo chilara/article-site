@@ -56,6 +56,7 @@ h4{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     width: 50%;
+    color: white;
 }
 
 a{
@@ -152,17 +153,20 @@ form fieldset input:focus {
 #url{
     width: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 #author{
     width: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 #comments{
     margin-left: 4%;
     width: 90%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 
